@@ -12,8 +12,12 @@ const employeesRoute = require('./routes/employees')
 const skillsRoute = require('./routes/skills')
 
 //Middlewares
+app.use('/create' , employeesRoute)
 app.use('/employees', employeesRoute)
 app.use('/skills', skillsRoute)
+app.use('/create-skill', skillsRoute)
+app.use('/delete', employeesRoute)
+
 
 
 

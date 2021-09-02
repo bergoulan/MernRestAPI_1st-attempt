@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const Employee = require('../models/Employee')
-const Skill = require('../models/Skill')
+
 
 //Main employee Page - displaying all the employees
 router.get('/', async (req, res) =>{
@@ -39,7 +39,6 @@ router.post('/', async (req, res) => {
     } catch (err){
         res.json({ message: err})
     }
-    
 })
 
 //Deleting a specific employee based on ID
